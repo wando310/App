@@ -1,0 +1,98 @@
+export default [
+    {
+        id: '13',
+        title: 'Brigadeiro',
+        description: 'Tomate | Grillet  | jlapeno',
+        value: '96.50',
+        img: require('../../../assets/doces/d1.jpg'),
+        icon: 'plus',
+        p:'53.45',
+        m:'72.00',
+        g:'96.50',
+        type:'listSweetMenu'
+    },
+    {
+        id: '14',
+        title: 'Bolacha de mel',
+        description: 'Tomate |  Mushroom | jlapeno',
+        value: '126.50',
+        img: require('../../../assets/doces/d2.jpg'),
+        icon: 'plus',
+        p:'100.45',
+        m:'117.00',
+        g:'126.50',
+        type:'listSweetMenu'
+    },
+    {
+        id: '15',
+        title: 'Pão de mel',
+        description: 'Tomate | Grillet Mushroom ',
+        value: '110.50',
+        img: require('../../../assets/doces/d3.jpg'),
+        icon: 'plus',
+        p:'75.45',
+        m:'88.00',
+        g:'110.50',
+        type:'listSweetMenu'
+    },
+    {
+        id: '16',
+        title: 'Pudin',
+        description: 'Grillet Mushroom | jlapeno',
+        value: '142.50',
+        img: require('../../../assets/doces/d4.jpg'),
+        icon: 'plus',
+        p:'115.45',
+        m:'127.00',
+        g:'142.50',
+        type:'listSweetMenu'
+    },
+    {
+        id: '17',
+        title: 'Brigadeiro recheado misto',
+        description: 'Tomate | Grillet Mushroom',
+        value: '130.50',
+        img: require('../../../assets/doces/d5.jpg'),
+        icon: 'plus',
+        p:'65.45',
+        m:'113.00',
+        g:'130.50',
+        type:'listSweetMenu'
+    },
+    {
+        id: '18',
+        title: 'Doce de coco',
+        description: 'Tomate | Mushroom | jlapeno',
+        value: '135.50',
+        img: require('../../../assets/doces/d6.jpg'),
+        icon: 'plus',
+        p:'112.45',
+        m:'117.00',
+        g:'135.50',
+        type:'listSweetMenu'
+    },
+    {
+        id: '19',
+        title: 'Variados',
+        description: 'Tomate | Mushroom | jlapeno',
+        value: '135.50',
+        img: require('../../../assets/doces/d7.jpg'),
+        icon: 'plus',
+        p:'48.45',
+        m:'116.00',
+        g:'135.50',
+        type:'listSweetMenu'
+    },
+    {
+        id: '20',
+        title: 'Misto',
+        description: 'Tomate | Mushroom | jlapeno',
+        value: '135.50',
+        img: require('../../../assets/doces/d8.jpg'),
+        icon: 'plus',
+        p:'77.45',
+        m:'121.55',
+        g:'135.50',
+        type:'listSweetMenu'
+    },
+]

@@ -58,27 +58,19 @@ export default function HeaderMenu() {
             <View style={styles.menuPrincipal}>
                 <View>
                     <TouchableOpacity onPress={showMode} style={styles.menu}>
-                        <Iconsegment style={styles.Iconsegment} name='segment' />
+                        <Iconsegment style={styles.Iconsegment} name='menu-open' />
                         <Text style={styles.textMenu}>MENU</Text>
                     </TouchableOpacity>
                 </View>
-
-                <View style={styles.containerSearch}>
-                    <TextInput 
-                    style={styles.inputText}
-                    placeholder='Pesquise aqui...'
-                    />
-                    <Iconsearch style={styles.iconSearch} name="search-outline"/>
-                </View>
-
+                <Image style={styles.logoFood} source={require('../../../assets/image/logoFood1.png')} />
                 <TouchableOpacity onPress={shwoDow} style={styles.containerCard}>
                     <View style={styles.card}>
-                        {/* <Text style={styles.qntCart}>{totalCart}</Text>*/}
-                        <Text style={styles.qntCart}>0</Text>
+                        <Text style={styles.qntCart}>{totalCart}</Text>
                         <Iconshoppingcart style={styles.Iconcard} name='opencart' />
                     </View>
                 </TouchableOpacity>
             </View>
+            
             <View style={styles.containerStatus}>
                 <TouchableOpacity onPress={() => { navigation.reset({ routes: [{ name: 'screenMyrequests' }] }) }} style={styles.pedidos}>
                     <Text style={styles.pedidosText}>Meus pedidos</Text>
@@ -93,55 +85,49 @@ export default function HeaderMenu() {
 
 const styles = StyleSheet.create({
     containerMenu: {
-        height: 160,
+        height: 210,
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: 50,
+        paddingTop: 0,
         backgroundColor: '#2f2859',
-        borderRadius: 35
     },
     menuPrincipal: {
-        width: '85%',
+        width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems:'center',
         padding: 8,
-        paddingLeft:15,
-        paddingRight:15,
-        borderRadius: 35,
-        backgroundColor: '#fff',
+        paddingLeft: 15,
+        paddingRight: 15,       
+        marginTop: -30
     },
     menu: {
         flexDirection: 'row',
         alignItems: 'center',
     },
     textMenu: {
-        color: '#e85d04',
+        color: '#457b9d',
         marginRight: 5,
         fontWeight: '700'
     },
     Iconsegment: {
         fontSize: 30,
-        color: '#e85d04'
-    },
-    containerCard: {
-        alignItems: 'center',
-        justifyContent: 'center',
+        color: '#023e8a',
+        transform: [{ rotate: "180deg" }],
     },
     card: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop:-5
+        marginTop: -5
     },
     Iconcard: {
-        fontSize: 20,
+        fontSize: 25,
         color: '#6da7f2',
     },
     qntCart: {
         color: '#615cf2',
         fontWeight: '800',
         fontSize: 15,
-        marginBottom:-5
+        marginBottom: -5
     },
     containerStatus: {
         flexDirection: 'row',
@@ -164,22 +150,26 @@ const styles = StyleSheet.create({
         resizeMode: 'stretch',
         top: 0
     },
-    containerSearch:{
-        flex:1,
-        marginLeft:15,
-        marginRight:20,
-        flexDirection:'row',
-        alignItems:'center'
+    containerSearch: {
+        flex: 1,
+        marginLeft: 15,
+        marginRight: 20,
+        flexDirection: 'row',
+        alignItems: 'center'
     },
-    inputText:{
-        flex:1,
-        marginRight:4,
-        fontWeight:'600',
-        color:'#343a40'
+    inputText: {
+        flex: 1,
+        marginRight: 4,
+        fontWeight: '600',
+        color: '#343a40'
     },
-    iconSearch:{
-        fontSize:25,
-        color:'#3a0ca3'
+    iconSearch: {
+        fontSize: 25,
+        color: '#3a0ca3'
+    },
+    logoFood: {
+        width: 120,
+        height: 120,
     }
 })
 

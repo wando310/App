@@ -94,12 +94,11 @@ const styles = StyleSheet.create({
         position: 'absolute',
         zIndex: 1,
         marginLeft: -330,
-        top: 50,
         backgroundColor: '#0e3a73',
         alignItems: 'center'
     },
     IconClose: {
-        color: '#e85d04',
+        color: '#457b9d',
         fontSize: 35,
 
     },

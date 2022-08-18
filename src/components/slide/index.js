@@ -1,23 +1,45 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { View, StyleSheet, Text, Image, ScrollView, TouchableOpacity, FlatList } from 'react-native'
 
 import * as Animation from 'react-native-animatable'
 
-import IconStar from 'react-native-vector-icons/AntDesign'
-import IconHeart from 'react-native-vector-icons/AntDesign'
+import IconStarFill from 'react-native-vector-icons/AntDesign'
+import IconStarEmputy from 'react-native-vector-icons/AntDesign'
+import IconStarHalfEmputy from 'react-native-vector-icons/FontAwesome5'
+
+import IconPlus from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import product from '../AllArraysProduct'
 
 export default function slide() {
-
-    
-    const [status, setStatus] = useState(false)
     function renderItens({ item }) {
-        function like(){           
-            console.log(status);
+
+        //Add star
+        function addStar() {
+            const arrayStart = [0, 0, 0, 0, 0]
+
+            let floor = Math.floor(item.note)
+            let rest = item.note - floor
+
+            for (var i = 0; i < floor; i++) {
+                arrayStart[i] = 2
+            }
+
+            rest > 0 ? arrayStart[i] = 1 : ''
+
+            return (
+                <View style={styles.selectStar}>
+                    {arrayStart.map((note, index) => (
+                        <View key={index}>
+                            { note === 0 && <IconStarEmputy style={styles.star} name='staro' /> }
+                            { note === 1 && <IconStarHalfEmputy style={styles.star} name='star-half-alt' />}
+                            { note === 2 && <IconStarFill style={styles.star} name='star' />}
+                        </View>
+                    ))}
+                </View>
+            )
         }
-        
 
         return (
 
@@ -28,29 +50,12 @@ export default function slide() {
                 <View style={styles.containerDice}>
                     <Text style={styles.title} >{item.title}</Text>
                     <Text style={styles.preview} >{item.description}</Text>
-                    <TouchableOpacity onPress={like} style={styles.containerHeart}>
-                        <IconHeart style={ status ? {color:'#000'} : [styles.heart]} name='heart' />
+                    <TouchableOpacity onPress={() => { }} style={styles.containerHeart}>
+                        <IconPlus style={{ color: 'red', fontSize: 30 }} name='message-plus' />
                     </TouchableOpacity>
                     <View style={styles.containerStar}>
-                        <View style={styles.selectStar}>
-                            <TouchableOpacity>
-                                <IconStar style={styles.star} name='star' />
-                            </TouchableOpacity>
-                            <TouchableOpacity>
-                                <IconStar style={styles.star} name='star' />
-                            </TouchableOpacity>
-                            <TouchableOpacity>
-                                <IconStar style={styles.star} name='star' />
-                            </TouchableOpacity>
-                            <TouchableOpacity>
-                                <IconStar style={styles.star} name='star' />
-                            </TouchableOpacity>
-                            <TouchableOpacity>
-                                <IconStar style={styles.star} name='star' />
-                            </TouchableOpacity>
-
-                        </View>
-                        <Text style={styles.textStar}>200 Review</Text>
+                        {addStar()}
+                        <Text style={styles.textStar}>{item.note}</Text>
                     </View>
                 </View>
             </View>
@@ -73,10 +78,13 @@ const styles = StyleSheet.create({
     containerSlide: {
         width: '100%',
         flex: 1,
-        backgroundColor: '#fff',
-        marginTop: 10,
+        backgroundColor:'#1e193b',
+        marginTop: -15,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        borderTopLeftRadius: 25,
+        borderTopRightRadius: 25,
+        paddingTop:20
     },
     containerDice: {
         padding: 10,
@@ -85,13 +93,13 @@ const styles = StyleSheet.create({
         width: 180,
         borderRadius: 25,
         margin: 5,
-        borderWidth: 1,
-        borderColor: '#ccc'
+        backgroundColor: '#023e8a',
     },
     img: {
         width: '100%',
         height: 130,
-        borderRadius: 25,
+        borderTopLeftRadius: 25,
+        borderTopRightRadius: 25,
     },
     title: {
         fontSize: 15,
@@ -99,22 +107,18 @@ const styles = StyleSheet.create({
     },
     preview: {
         fontSize: 12,
-        color: '#6c757d'
+        color: '#0077b6'
     },
     containerHeart: {
         alignItems: 'flex-end'
     },
-    heart: {
-        fontSize: 25,
-        color: 'red',
-        marginTop: 10
-    },
     containerStar: {
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-around',
+        alignItems: 'center'
     },
     selectStar: {
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     star: {
         fontSize: 16,
@@ -122,7 +126,8 @@ const styles = StyleSheet.create({
         color: '#ffd166'
     },
     textStar: {
-        fontSize: 9,
-        fontWeight: '700'
-    }
+        fontSize: 15,
+        fontWeight: '700',
+        color: '#6c757d'
+    },
 })

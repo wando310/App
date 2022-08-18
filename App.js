@@ -1,5 +1,4 @@
-import { SafeAreaView, StyleSheet, Image } from 'react-native'
-import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, StatusBar } from 'react-native'
 
 import ScreenWelcome from './src/pages/screenWelcome'
 import Menu from './src/pages/Menu'
@@ -27,11 +26,12 @@ const Stack = createNativeStackNavigator()
 
 import AutProvider from './src/context/auth';
 import { View } from 'react-native-animatable';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 export default function App() {
   return (
     <NavigationContainer style={styles.container}>     
-      <StatusBar barStyle="dark-content" hidden={false} translucent={true} />
+      <StatusBar  barStyle='light-content' backgroundColor='#2f2859' />
       <AutProvider>
         <Stack.Navigator
           initialRouteName='Menu'      
@@ -46,7 +46,7 @@ export default function App() {
             component={Menu}
             options={{
               title: 'Bem vindo :)',
-              headerTintColor: '#fff',
+              headerTintColor: '#fefae0',
               headerStyle: {
                 backgroundColor:'#2f2859',
                 

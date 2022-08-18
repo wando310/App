@@ -80,7 +80,7 @@ function Modal({ route, navigation }) {
         const previwData = response ? JSON.parse(response) : []
         const cartArray = [...previwData, dataCart]
         await AsyncStorage.setItem('@data_key', JSON.stringify(cartArray))
-        //AsyncStorage.clear()       
+       // AsyncStorage.clear()       
 
     }
 

@@ -1,3 +1,5 @@
+import React from 'react'
+
 export default [
     {
         id: '1',
@@ -9,7 +11,8 @@ export default [
         p: '5.45',
         m: '7.00',
         g: '10.50',
-        type:'listDrinkMenu'
+        type:'listDrinkMenu',
+        note:'1.5'
     },
     {
         id: '2',
@@ -21,7 +24,8 @@ export default [
         p: '8.45',
         m: '17.00',
         g: '20.50',
-        type:'listDrinkMenu'
+        type:'listDrinkMenu',
+        note:'3.5'
     },
     {
         id: '3',
@@ -33,7 +37,8 @@ export default [
         p: '10.45',
         m: '27.00',
         g: '30.50',
-        type:'listDrinkMenu'
+        type:'listDrinkMenu',
+        note:'2.5'
     },
     {
         id: '4',
@@ -45,7 +50,8 @@ export default [
         p: '15.45',
         m: '37.00',
         g: '40.50',
-        type:'listDrinkMenu'
+        type:'listDrinkMenu',
+        note:'1.8'
     },
     {
         id: '5',
@@ -57,7 +63,8 @@ export default [
         p: '34.45',
         m: '44.00',
         g: '50.50',
-        type:'listDrinkMenu'
+        type:'listDrinkMenu',
+        note:'4.5'
     },
     {
         id: '6',
@@ -69,7 +76,8 @@ export default [
         p: '26.45',
         m: '52.00',
         g: '60.50',
-        type:'listDrinkMenu'
+        type:'listDrinkMenu',
+        note:'1.3'
     },
     {
         id: '7',
@@ -81,7 +89,8 @@ export default [
         p: '50.45',
         m: '77.00',
         g: '96.50',
-        type: 'listCakeMenu'
+        type: 'listCakeMenu',
+        note:'3.3'
     },
     {
         id: '8',
@@ -93,7 +102,8 @@ export default [
         p: '79.90',
         m: '100.00',
         g: '126.50',
-        type: 'listCakeMenu'
+        type: 'listCakeMenu',
+        note:'4.6'
     },
     {
         id: '9',
@@ -105,7 +115,8 @@ export default [
         p: '56.45',
         m: '88.99',
         g: '110.50',
-        type: 'listCakeMenu'
+        type: 'listCakeMenu',
+        note:'3.5'
     },
     {
         id: '10',
@@ -117,7 +128,8 @@ export default [
         p: '115.45',
         m: '133.40',
         g: '142.50',
-        type: 'listCakeMenu'
+        type: 'listCakeMenu',
+        note:'2.4'
     },
     {
         id: '11',
@@ -129,7 +141,8 @@ export default [
         p: '95.45',
         m: '112.00',
         g: '130.50',
-        type: 'listCakeMenu'
+        type: 'listCakeMenu',
+        note:'3.2'
     },
     {
         id: '12',
@@ -141,7 +154,8 @@ export default [
         p: '96.35',
         m: '122.00',
         g: '135.50',
-        type: 'listCakeMenu'
+        type: 'listCakeMenu',
+        note:'4.5'
     },
     {
         id: '13',
@@ -153,7 +167,8 @@ export default [
         p:'53.45',
         m:'72.00',
         g:'96.50',
-        type:'listSweetMenu'
+        type:'listSweetMenu',
+        note:'4.6'
     },
     {
         id: '14',
@@ -165,7 +180,8 @@ export default [
         p:'100.45',
         m:'117.00',
         g:'126.50',
-        type:'listSweetMenu'
+        type:'listSweetMenu',
+        note:'2.2'
     },
     {
         id: '15',
@@ -177,7 +193,8 @@ export default [
         p:'75.45',
         m:'88.00',
         g:'110.50',
-        type:'listSweetMenu'
+        type:'listSweetMenu',
+        note:'3.2'
     },
     {
         id: '16',
@@ -189,7 +206,8 @@ export default [
         p:'115.45',
         m:'127.00',
         g:'142.50',
-        type:'listSweetMenu'
+        type:'listSweetMenu',
+        note:'1.1'
     },
     {
         id: '17',
@@ -201,7 +219,8 @@ export default [
         p:'65.45',
         m:'113.00',
         g:'130.50',
-        type:'listSweetMenu'
+        type:'listSweetMenu',
+        note:'2.3'
     },
     {
         id: '18',
@@ -213,7 +232,8 @@ export default [
         p:'112.45',
         m:'117.00',
         g:'135.50',
-        type:'listSweetMenu'
+        type:'listSweetMenu',
+        note:'1.7'
     },
     {
         id: '19',
@@ -225,7 +245,8 @@ export default [
         p:'48.45',
         m:'116.00',
         g:'135.50',
-        type:'listSweetMenu'
+        type:'listSweetMenu',
+        note:'2.5'
     },
     {
         id: '20',
@@ -237,7 +258,8 @@ export default [
         p:'77.45',
         m:'121.55',
         g:'135.50',
-        type:'listSweetMenu'
+        type:'listSweetMenu',
+        note:'4.2'
     },
     {
         id: '21',
@@ -249,7 +271,8 @@ export default [
         p:'5.45',
         m:'7.00',
         g:'10.50',
-        type:'listLunchMenu'
+        type:'listLunchMenu',
+        note:'1.5'
     },
     {
         id: '22',
@@ -261,7 +284,8 @@ export default [
         p:'6.45',
         m:'17.00',
         g:'20.50',
-        type:'listLunchMenu'
+        type:'listLunchMenu',
+        note:'2.5'
     },
     {
         id: '23',
@@ -273,7 +297,8 @@ export default [
         p:'16.45',
         m:'25.00',
         g:'30.50',
-        type:'listLunchMenu'
+        type:'listLunchMenu',
+        note:'3.5'
     },
     {
         id: '24',
@@ -285,7 +310,8 @@ export default [
         p:'25.45',
         m:'37.00',
         g:'40.50',
-        type:'listLunchMenu'
+        type:'listLunchMenu',
+        note:'4.5'
     },
     {
         id: '25',
@@ -297,7 +323,8 @@ export default [
         p:'25.45',
         m:'37.00',
         g:'50.50',
-        type:'listLunchMenu'
+        type:'listLunchMenu',
+        note:'2.5'
     },
     {
         id: '26',
@@ -309,7 +336,8 @@ export default [
         p:'45.45',
         m:'55.00',
         g:'60.50',
-        type:'listLunchMenu'
+        type:'listLunchMenu',
+        note:'4.5'
     },
     {
         id: '27',
@@ -321,7 +349,8 @@ export default [
         p: '35.45',
         m: '40.00',
         g: '46.50',
-        type:'listPizzaMenu'
+        type:'listPizzaMenu',
+        note:'1.5'
     },
     {
         id: '28',
@@ -333,7 +362,8 @@ export default [
         p: '15.45',
         m: '22.00',
         g: '26.50',
-        type:'listPizzaMenu'
+        type:'listPizzaMenu',
+        note:'1.5'
     },
     {
         id: '29',
@@ -345,7 +375,8 @@ export default [
         p: '22.45',
         m: '27.00',
         g: '37.50',
-        type:'listPizzaMenu'
+        type:'listPizzaMenu',
+        note:'2.3'
     },
     {
         id: '30',
@@ -357,7 +388,8 @@ export default [
         p: '33.45',
         m: '39.00',
         g: '42.50',
-        type:'listPizzaMenu'
+        type:'listPizzaMenu',
+        note:'4.4'
     },
     {
         id: '31',
@@ -369,7 +401,8 @@ export default [
         p: '26.45',
         m: '31.00',
         g: '40.50',
-        type:'listPizzaMenu'
+        type:'listPizzaMenu',
+        note:'2.6'
     },
     {
         id: '32',
@@ -381,6 +414,7 @@ export default [
         p: '12.45',
         m: '27.00',
         g: '35.50',
-        type:'listPizzaMenu'
+        type:'listPizzaMenu',
+        note:'3.3'
     },
 ]
